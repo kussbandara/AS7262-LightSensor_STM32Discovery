@@ -1,7 +1,5 @@
 
 #include "stm32f10x.h"
-//#include "STM32vldiscovery.h"
-//#include "LCD.h"    
 #include <stdio.h>
 
 /* Private typedef -----------------------------------------------------------*/
@@ -25,6 +23,7 @@ int CHIP1=1;
 int CHIP2=2;
 float humidityValue;
 float temparatureValue;
+float f=0;
 char str[];
 //AS7262 
 uint8_t readVal=0;
