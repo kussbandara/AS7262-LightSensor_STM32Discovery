@@ -1,7 +1,5 @@
 
 #include "stm32f10x.h"
-//#include "STM32vldiscovery.h"
-//#include "LCD.h"    
 #include <stdio.h>
 
 /* Private typedef -----------------------------------------------------------*/
