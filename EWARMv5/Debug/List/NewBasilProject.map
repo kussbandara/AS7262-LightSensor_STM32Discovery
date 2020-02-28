@@ -1,0 +1,297 @@
+###############################################################################
+#
+# IAR ELF Linker V8.11.2.13589/W32 for ARM                26/Nov/2018  12:21:23
+# Copyright 2007-2017 IAR Systems AB.
+#
+#    Output file  =  
+#        C:\Users\Bodhi\Documents\ARMProgrammingNew\an3268\stm32vldiscovery_package\Project\Examples\NewBasilProjectLightSensor
+#        - Copy\EWARMv5\Debug\Exe\NewBasilProject.out
+#    Map file     =  
+#        C:\Users\Bodhi\Documents\ARMProgrammingNew\an3268\stm32vldiscovery_package\Project\Examples\NewBasilProjectLightSensor
+#        - Copy\EWARMv5\Debug\List\NewBasilProject.map
+#    Command line =  
+#        -f C:\Users\Bodhi\AppData\Local\Temp\EWB20F.tmp
+#        ("C:\Users\Bodhi\Documents\ARMProgrammingNew\an3268\stm32vldiscovery_package\Project\Examples\NewBasilProjectLightSensor
+#        - Copy\EWARMv5\Debug\Obj\LCD.o"
+#        "C:\Users\Bodhi\Documents\ARMProgrammingNew\an3268\stm32vldiscovery_package\Project\Examples\NewBasilProjectLightSensor
+#        - Copy\EWARMv5\Debug\Obj\main.o"
+#        "C:\Users\Bodhi\Documents\ARMProgrammingNew\an3268\stm32vldiscovery_package\Project\Examples\NewBasilProjectLightSensor
+#        - Copy\EWARMv5\Debug\Obj\stm32f10x_gpio.o"
+#        "C:\Users\Bodhi\Documents\ARMProgrammingNew\an3268\stm32vldiscovery_package\Project\Examples\NewBasilProjectLightSensor
+#        - Copy\EWARMv5\Debug\Obj\stm32f10x_i2c.o"
+#        "C:\Users\Bodhi\Documents\ARMProgrammingNew\an3268\stm32vldiscovery_package\Project\Examples\NewBasilProjectLightSensor
+#        - Copy\EWARMv5\Debug\Obj\stm32f10x_rcc.o"
+#        "C:\Users\Bodhi\Documents\ARMProgrammingNew\an3268\stm32vldiscovery_package\Project\Examples\NewBasilProjectLightSensor
+#        - Copy\EWARMv5\Debug\Obj\stm32f10x_tim.o"
+#        "C:\Users\Bodhi\Documents\ARMProgrammingNew\an3268\stm32vldiscovery_package\Project\Examples\NewBasilProjectLightSensor
+#        - Copy\EWARMv5\Debug\Obj\STM32vldiscovery.o" -o
+#        "C:\Users\Bodhi\Documents\ARMProgrammingNew\an3268\stm32vldiscovery_package\Project\Examples\NewBasilProjectLightSensor
+#        - Copy\EWARMv5\Debug\Exe\NewBasilProject.out" --map
+#        "C:\Users\Bodhi\Documents\ARMProgrammingNew\an3268\stm32vldiscovery_package\Project\Examples\NewBasilProjectLightSensor
+#        - Copy\EWARMv5\Debug\List\NewBasilProject.map" --config "C:\Program
+#        Files (x86)\IAR Systems\Embedded Workbench
+#        8.0\arm\config\linker\ST\stm32f100x6.icf" --semihosting --entry
+#        __iar_program_start --vfe --text_out locale)
+#
+###############################################################################
+
+*******************************************************************************
+*** RUNTIME MODEL ATTRIBUTES
+***
+
+CppFlavor       = *
+__SystemLibrary = DLib
+__dlib_version  = 6
+
+
+*******************************************************************************
+*** HEAP SELECTION
+***
+
+The basic heap was selected because some modules are built with
+size limitations (and not runtime checking), and --advanced_heap
+was not specified.
+
+
+*******************************************************************************
+*** PLACEMENT SUMMARY
+***
+
+"A0":  place at 0x08000000 { ro section .intvec };
+"P1":  place in [from 0x08000000 to 0x08007fff] { ro };
+define block CSTACK with size = 1K, alignment = 8 { };
+define block HEAP with size = 1K, alignment = 8 { };
+"P2":  place in [from 0x20000000 to 0x20000fff] {
+          rw, block CSTACK, block HEAP };
+initialize by copy { rw };
+
+  Section            Kind        Address   Size  Object
+  -------            ----        -------   ----  ------
+"A0":                                      0x40
+  .intvec            ro code  0x08000000   0x40  vector_table_M.o [4]
+                            - 0x08000040   0x40
+
+"P1":                                     0xba1
+  .text              ro code  0x08000040  0x54c  main.o [1]
+  .text              ro code  0x0800058c  0x14c  stm32f10x_rcc.o [1]
+  .text              ro code  0x080006d8  0x218  stm32f10x_i2c.o [1]
+  .text              ro code  0x080008f0   0xd0  stm32f10x_gpio.o [1]
+  .text              ro code  0x080009c0   0xc8  stm32f10x_tim.o [1]
+  .text              ro code  0x08000a88    0xc  memcpy.o [4]
+  .text              ro code  0x08000a94   0x76  ABImemcpy_unaligned.o [4]
+  .text              ro code  0x08000b0a   0x38  packbits_init_single.o [4]
+  .text              ro code  0x08000b42    0x2  vector_table_M.o [4]
+  .text              ro code  0x08000b44   0x28  data_init.o [4]
+  .iar.init_table    const    0x08000b6c   0x10  - Linker created -
+  .text              ro code  0x08000b7c   0x1a  cmain.o [4]
+  .text              ro code  0x08000b96    0x4  low_level_init.o [3]
+  .text              ro code  0x08000b9a    0x4  exit.o [3]
+  .text              ro code  0x08000ba0    0xa  cexit.o [4]
+  .text              ro code  0x08000bac   0x14  exit.o [5]
+  .text              ro code  0x08000bc0    0xc  cstartup_M.o [4]
+  .rodata            const    0x08000bcc    0x0  packbits_init_single.o [4]
+  Initializer bytes  const    0x08000bcc   0x15  <for P2-1>
+                            - 0x08000be1  0xba1
+
+"P2", part 1 of 2:                         0x58
+  P2-1                        0x20000000   0x58  <Init block>
+    .data            inited   0x20000000   0x10  stm32f10x_rcc.o [1]
+    .data            inited   0x20000010    0x4  stm32f10x_rcc.o [1]
+    .bss             inited   0x20000014    0x4  main.o [1]
+    .bss             inited   0x20000018   0x10  main.o [1]
+    .bss             inited   0x20000028    0xc  main.o [1]
+    .bss             inited   0x20000034    0x4  main.o [1]
+    .bss             inited   0x20000038    0x4  main.o [1]
+    .bss             inited   0x2000003c    0x4  main.o [1]
+    .bss             inited   0x20000040    0x4  main.o [1]
+    .bss             inited   0x20000044    0x4  main.o [1]
+    .bss             inited   0x20000048    0x4  main.o [1]
+    .bss             inited   0x2000004c    0x4  main.o [1]
+    .bss             inited   0x20000050    0x1  main.o [1]
+    .bss             inited   0x20000051    0x1  main.o [1]
+    .bss             inited   0x20000052    0x1  main.o [1]
+    .bss             inited   0x20000053    0x1  main.o [1]
+    .bss             inited   0x20000054    0x1  main.o [1]
+    .bss             inited   0x20000055    0x1  main.o [1]
+    .bss             inited   0x20000056    0x1  main.o [1]
+    .bss             inited   0x20000057    0x1  main.o [1]
+                            - 0x20000058   0x58
+
+"P2", part 2 of 2:                        0x400
+  CSTACK                      0x20000058  0x400  <Block>
+    CSTACK           uninit   0x20000058  0x400  <Block tail>
+                            - 0x20000458  0x400
+
+
+*******************************************************************************
+*** INIT TABLE
+***
+
+          Address     Size
+          -------     ----
+Copy/packbits (__iar_packbits_init_single3)
+    1 source range, total size 0x15 (23% of destination):
+          0x08000bcc  0x15
+    1 destination range, total size 0x58:
+          0x20000000  0x58
+
+
+
+*******************************************************************************
+*** MODULE SUMMARY
+***
+
+    Module                  ro code  ro data  rw data
+    ------                  -------  -------  -------
+C:\Users\Bodhi\Documents\ARMProgrammingNew\an3268\stm32vldiscovery_package\Project\Examples\NewBasilProjectLightSensor - Copy\EWARMv5\Debug\Obj: [1]
+    main.o                    1 356       17       68
+    stm32f10x_gpio.o            208
+    stm32f10x_i2c.o             536
+    stm32f10x_rcc.o             332        4       20
+    stm32f10x_tim.o             200
+    -------------------------------------------------
+    Total:                    2 632       21       88
+
+command line: [2]
+    -------------------------------------------------
+    Total:
+
+dl7M_tln.a: [3]
+    exit.o                        4
+    low_level_init.o              4
+    -------------------------------------------------
+    Total:                        8
+
+rt7M_tl.a: [4]
+    ABImemcpy_unaligned.o       118
+    cexit.o                      10
+    cmain.o                      26
+    cstartup_M.o                 12
+    data_init.o                  40
+    memcpy.o                     12
+    packbits_init_single.o       56
+    vector_table_M.o             66
+    -------------------------------------------------
+    Total:                      340
+
+shb_l.a: [5]
+    exit.o                       20
+    -------------------------------------------------
+    Total:                       20
+
+    Gaps                          4
+    Linker created                        16    1 024
+-----------------------------------------------------
+    Grand Total:              3 004       37    1 112
+
+
+*******************************************************************************
+*** ENTRY LIST
+***
+
+Entry                      Address  Size  Type      Object
+-----                      -------  ----  ----      ------
+.iar.init_table$$Base   0x08000b6c         --   Gb  - Linker created -
+.iar.init_table$$Limit  0x08000b7c         --   Gb  - Linker created -
+?main                   0x08000b7d        Code  Gb  cmain.o [4]
+ADCPrescTable           0x20000010   0x4  Data  Lc  stm32f10x_rcc.o [1]
+APBAHBPrescTable        0x20000000  0x10  Data  Lc  stm32f10x_rcc.o [1]
+CSTACK$$Base            0x20000058         --   Gb  - Linker created -
+CSTACK$$Limit           0x20000458         --   Gb  - Linker created -
+Config_GPIO             0x08000187  0x5a  Code  Gb  main.o [1]
+Delay_ms                0x0800023b  0x30  Code  Gb  main.o [1]
+Enable_Clock            0x080001e1  0x1e  Code  Gb  main.o [1]
+GPIO_Init               0x080008f1  0xc4  Code  Gb  stm32f10x_gpio.o [1]
+GPIO_InitStructure      0x20000014   0x4  Data  Gb  main.o [1]
+GPIO_ResetBits          0x080009bb   0x6  Code  Gb  stm32f10x_gpio.o [1]
+GPIO_SetBits            0x080009b5   0x6  Code  Gb  stm32f10x_gpio.o [1]
+I2C_AcknowledgeConfig   0x08000835  0x1c  Code  Gb  stm32f10x_i2c.o [1]
+I2C_CheckEvent          0x0800088b  0x24  Code  Gb  stm32f10x_i2c.o [1]
+I2C_Cmd                 0x080007e1  0x1c  Code  Gb  stm32f10x_i2c.o [1]
+I2C_DeInit              0x080006d9  0x34  Code  Gb  stm32f10x_i2c.o [1]
+I2C_GenerateSTART       0x080007fd  0x1c  Code  Gb  stm32f10x_i2c.o [1]
+I2C_GenerateSTOP        0x08000819  0x1c  Code  Gb  stm32f10x_i2c.o [1]
+I2C_GetFlagStatus       0x080008af  0x42  Code  Gb  stm32f10x_i2c.o [1]
+I2C_ITConfig            0x08000851  0x18  Code  Gb  stm32f10x_i2c.o [1]
+I2C_Init                0x0800070d  0xc4  Code  Gb  stm32f10x_i2c.o [1]
+I2C_InitStructure       0x20000018  0x10  Data  Gb  main.o [1]
+I2C_ReceiveData         0x0800086f   0x6  Code  Gb  stm32f10x_i2c.o [1]
+I2C_Send7bitAddress     0x08000875  0x16  Code  Gb  stm32f10x_i2c.o [1]
+I2C_SendData            0x08000869   0x6  Code  Gb  stm32f10x_i2c.o [1]
+Init_I2C                0x08000127  0x60  Code  Gb  main.o [1]
+RCC_APB1PeriphClockCmd  0x08000673  0x20  Code  Gb  stm32f10x_rcc.o [1]
+RCC_APB1PeriphResetCmd  0x08000693  0x20  Code  Gb  stm32f10x_rcc.o [1]
+RCC_APB2PeriphClockCmd  0x08000653  0x20  Code  Gb  stm32f10x_rcc.o [1]
+RCC_GetClocksFreq       0x08000597  0xbc  Code  Gb  stm32f10x_rcc.o [1]
+RCC_GetSYSCLKSource     0x0800058d   0xa  Code  Gb  stm32f10x_rcc.o [1]
+RegVal                  0x20000056   0x1  Data  Gb  main.o [1]
+Region$$Table$$Base     0x08000b6c         --   Gb  - Linker created -
+Region$$Table$$Limit    0x08000b7c         --   Gb  - Linker created -
+Status                  0x20000051   0x1  Data  Gb  main.o [1]
+TIM_Cmd                 0x08000a65  0x1c  Code  Gb  stm32f10x_tim.o [1]
+TIM_GetCounter          0x08000a85   0x4  Code  Gb  stm32f10x_tim.o [1]
+TIM_SetCounter          0x08000a81   0x4  Code  Gb  stm32f10x_tim.o [1]
+TIM_TimeBaseInit        0x080009c1  0x7a  Code  Gb  stm32f10x_tim.o [1]
+Timer_Configuration     0x080001ff  0x3c  Code  Gb  main.o [1]
+__cmain                 0x08000b7d        Code  Gb  cmain.o [4]
+__exit                  0x08000bad  0x14  Code  Gb  exit.o [5]
+__iar_data_init3        0x08000b45  0x28  Code  Gb  data_init.o [4]
+__iar_packbits_init_single3
+                        0x08000b0b  0x38  Code  Gb  packbits_init_single.o [4]
+__iar_program_start     0x08000bc1        Code  Gb  cstartup_M.o [4]
+__iar_systems$$module {Abs}
+                        0x00000001        Data  Gb  command line/config [2]
+__iar_unaligned_memcpy  0x08000a95        Code  Gb  ABImemcpy_unaligned.o [4]
+__iar_unaligned_memcpy4
+                        0x08000ab5        Code  Gb  ABImemcpy_unaligned.o [4]
+__iar_unaligned_memcpy8
+                        0x08000ab5        Code  Gb  ABImemcpy_unaligned.o [4]
+__low_level_init        0x08000b97   0x4  Code  Gb  low_level_init.o [3]
+__vector_table          0x08000000        Data  Gb  vector_table_M.o [4]
+_call_main              0x08000b89        Code  Gb  cmain.o [4]
+_exit                   0x08000ba1        Code  Gb  cexit.o [4]
+_main                   0x08000b93        Code  Gb  cmain.o [4]
+b0                      0x20000052   0x1  Data  Gb  main.o [1]
+b1                      0x20000053   0x1  Data  Gb  main.o [1]
+b2                      0x20000054   0x1  Data  Gb  main.o [1]
+b3                      0x20000055   0x1  Data  Gb  main.o [1]
+blue                    0x20000038   0x4  Data  Gb  main.o [1]
+clearDataAvailable      0x0800026b  0x18  Code  Gb  main.o [1]
+dataAvailable           0x08000283   0xe  Code  Gb  main.o [1]
+exit                    0x08000b9b   0x4  Code  Gb  exit.o [3]
+getCalibratedBlue       0x0800029b   0xa  Code  Gb  main.o [1]
+getCalibratedGreen      0x080002a5   0xa  Code  Gb  main.o [1]
+getCalibratedOrange     0x080002b9   0xa  Code  Gb  main.o [1]
+getCalibratedRed        0x080002c3   0xa  Code  Gb  main.o [1]
+getCalibratedValue      0x080002cd  0x7a  Code  Gb  main.o [1]
+getCalibratedViolet     0x08000291   0xa  Code  Gb  main.o [1]
+getCalibratedYellow     0x080002af   0xa  Code  Gb  main.o [1]
+green                   0x2000003c   0x4  Data  Gb  main.o [1]
+main                    0x08000041  0xe6  Code  Gb  main.o [1]
+memcpy                  0x08000a89   0xc  Code  Gb  memcpy.o [4]
+myFloat                 0x2000004c   0x4  Data  Gb  main.o [1]
+orange                  0x20000044   0x4  Data  Gb  main.o [1]
+readRegisterOneByte     0x080003ef  0xbe  Code  Gb  main.o [1]
+readVal                 0x20000050   0x1  Data  Gb  main.o [1]
+red                     0x20000048   0x4  Data  Gb  main.o [1]
+result                  0x20000057   0x1  Data  Gb  main.o [1]
+timerInitStructure      0x20000028   0xc  Data  Gb  main.o [1]
+violet                  0x20000034   0x4  Data  Gb  main.o [1]
+virtualReadReg          0x08000347  0x5c  Code  Gb  main.o [1]
+virtualWriteReg         0x080003a3  0x4c  Code  Gb  main.o [1]
+writeRegister           0x080004ad  0x74  Code  Gb  main.o [1]
+yellow                  0x20000040   0x4  Data  Gb  main.o [1]
+
+
+[1] = C:\Users\Bodhi\Documents\ARMProgrammingNew\an3268\stm32vldiscovery_package\Project\Examples\NewBasilProjectLightSensor - Copy\EWARMv5\Debug\Obj
+[2] = command line
+[3] = dl7M_tln.a
+[4] = rt7M_tl.a
+[5] = shb_l.a
+
+  3 004 bytes of readonly  code memory
+     37 bytes of readonly  data memory
+  1 112 bytes of readwrite data memory
+
+Errors: none
+Warnings: none
