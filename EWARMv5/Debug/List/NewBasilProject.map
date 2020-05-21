@@ -1,6 +1,6 @@
 ###############################################################################
 #
-# IAR ELF Linker V8.32.3.193/W32 for ARM                  21/May/2020  11:36:56
+# IAR ELF Linker V8.32.3.193/W32 for ARM                  21/May/2020  13:28:13
 # Copyright 2007-2019 IAR Systems AB.
 #
 #    Output file  =  
@@ -8,7 +8,7 @@
 #    Map file     =  
 #        C:\Users\testHome\Documents\ARMProgrammingNew\downloadsSTM32100BEVAL\STM32F10x_StdPeriph_Lib_V3.5.0\Project\AS7262Cloned\EWARMv5\Debug\List\NewBasilProject.map
 #    Command line =  
-#        -f C:\Users\testHome\AppData\Local\Temp\EW3ECB.tmp
+#        -f C:\Users\testHome\AppData\Local\Temp\EW1FBA.tmp
 #        (C:\Users\testHome\Documents\ARMProgrammingNew\downloadsSTM32100BEVAL\STM32F10x_StdPeriph_Lib_V3.5.0\Project\AS7262Cloned\EWARMv5\Debug\Obj\LCD.o
 #        C:\Users\testHome\Documents\ARMProgrammingNew\downloadsSTM32100BEVAL\STM32F10x_StdPeriph_Lib_V3.5.0\Project\AS7262Cloned\EWARMv5\Debug\Obj\main.o
 #        C:\Users\testHome\Documents\ARMProgrammingNew\downloadsSTM32100BEVAL\STM32F10x_StdPeriph_Lib_V3.5.0\Project\AS7262Cloned\EWARMv5\Debug\Obj\stm32f10x_gpio.o
@@ -61,7 +61,7 @@ initialize by copy { rw };
   .intvec            ro code   0x800'0000   0x40  vector_table_M.o [3]
                              - 0x800'0040   0x40
 
-"P1":                                      0xb59
+"P1":                                      0xb97
   .text              ro code   0x800'0040  0x4fc  main.o [1]
   .text              ro code   0x800'053c  0x138  stm32f10x_rcc.o [1]
   .text              ro code   0x800'0674  0x21c  stm32f10x_i2c.o [1]
@@ -71,53 +71,56 @@ initialize by copy { rw };
   .text              ro code   0x800'0a48   0x76  ABImemcpy_unaligned.o [3]
   .text              ro code   0x800'0abe   0x38  packbits_init_single.o [3]
   .text              ro code   0x800'0af6    0x2  vector_table_M.o [3]
-  .text              ro code   0x800'0af8   0x28  data_init.o [3]
-  .iar.init_table    const     0x800'0b20   0x10  - Linker created -
-  .text              ro code   0x800'0b30   0x1e  cmain.o [3]
-  .text              ro code   0x800'0b4e    0x4  low_level_init.o [2]
-  .text              ro code   0x800'0b52    0x4  exit.o [2]
-  .text              ro code   0x800'0b58    0xa  cexit.o [3]
-  .text              ro code   0x800'0b64   0x14  exit.o [4]
-  .text              ro code   0x800'0b78    0xc  cstartup_M.o [3]
-  .rodata            const     0x800'0b84    0x0  packbits_init_single.o [3]
-  Initializer bytes  const     0x800'0b84   0x15  <for P2-1>
-                             - 0x800'0b99  0xb59
+  .text              ro code   0x800'0af8   0x30  iarttio.o [4]
+  .text              ro code   0x800'0b28    0xc  XShttio.o [2]
+  .text              ro code   0x800'0b34   0x28  data_init.o [3]
+  .iar.init_table    const     0x800'0b5c   0x10  - Linker created -
+  .text              ro code   0x800'0b6c   0x1e  cmain.o [3]
+  .text              ro code   0x800'0b8a    0x4  low_level_init.o [2]
+  .text              ro code   0x800'0b8e    0x4  exit.o [2]
+  .text              ro code   0x800'0b94    0xa  cexit.o [3]
+  .text              ro code   0x800'0ba0   0x14  exit.o [4]
+  .text              ro code   0x800'0bb4    0xc  cstartup_M.o [3]
+  .rodata            const     0x800'0bc0    0x0  packbits_init_single.o [3]
+  Initializer bytes  const     0x800'0bc0   0x17  <for P2-1>
+                             - 0x800'0bd7  0xb97
 
-"P2", part 1 of 2:                          0x58
-  P2-1                        0x2000'0000   0x58  <Init block>
+"P2", part 1 of 2:                          0x60
+  P2-1                        0x2000'0000   0x60  <Init block>
     .data            inited   0x2000'0000   0x10  stm32f10x_rcc.o [1]
     .data            inited   0x2000'0010    0x4  stm32f10x_rcc.o [1]
-    .bss             inited   0x2000'0014    0x4  main.o [1]
-    .bss             inited   0x2000'0018   0x10  main.o [1]
-    .bss             inited   0x2000'0028    0xc  main.o [1]
-    .bss             inited   0x2000'0034    0x4  main.o [1]
-    .bss             inited   0x2000'0038    0x4  main.o [1]
+    .data            inited   0x2000'0014    0x8  XShttio.o [2]
+    .bss             inited   0x2000'001c    0x4  main.o [1]
+    .bss             inited   0x2000'0020   0x10  main.o [1]
+    .bss             inited   0x2000'0030    0xc  main.o [1]
     .bss             inited   0x2000'003c    0x4  main.o [1]
     .bss             inited   0x2000'0040    0x4  main.o [1]
     .bss             inited   0x2000'0044    0x4  main.o [1]
     .bss             inited   0x2000'0048    0x4  main.o [1]
     .bss             inited   0x2000'004c    0x4  main.o [1]
-    .bss             inited   0x2000'0050    0x1  main.o [1]
-    .bss             inited   0x2000'0051    0x1  main.o [1]
-    .bss             inited   0x2000'0052    0x1  main.o [1]
-    .bss             inited   0x2000'0053    0x1  main.o [1]
-    .bss             inited   0x2000'0054    0x1  main.o [1]
-    .bss             inited   0x2000'0055    0x1  main.o [1]
-    .bss             inited   0x2000'0056    0x1  main.o [1]
-    .bss             inited   0x2000'0057    0x1  main.o [1]
-                            - 0x2000'0058   0x58
+    .bss             inited   0x2000'0050    0x4  main.o [1]
+    .bss             inited   0x2000'0054    0x4  main.o [1]
+    .bss             inited   0x2000'0058    0x1  main.o [1]
+    .bss             inited   0x2000'0059    0x1  main.o [1]
+    .bss             inited   0x2000'005a    0x1  main.o [1]
+    .bss             inited   0x2000'005b    0x1  main.o [1]
+    .bss             inited   0x2000'005c    0x1  main.o [1]
+    .bss             inited   0x2000'005d    0x1  main.o [1]
+    .bss             inited   0x2000'005e    0x1  main.o [1]
+    .bss             inited   0x2000'005f    0x1  main.o [1]
+                            - 0x2000'0060   0x60
 
 "P2", part 2 of 2:                         0x400
-  CSTACK                      0x2000'0058  0x400  <Block>
-    CSTACK           uninit   0x2000'0058  0x400  <Block tail>
-                            - 0x2000'0458  0x400
+  CSTACK                      0x2000'0060  0x400  <Block>
+    CSTACK           uninit   0x2000'0060  0x400  <Block tail>
+                            - 0x2000'0460  0x400
 
 Unused ranges:
 
          From           To    Size
          ----           --    ----
-   0x800'0b99   0x800'7fff  0x7467
-  0x2000'0458  0x2000'0fff   0xba8
+   0x800'0bd7   0x800'7fff  0x7429
+  0x2000'0460  0x2000'0fff   0xba0
 
 
 *******************************************************************************
@@ -127,10 +130,10 @@ Unused ranges:
           Address      Size
           -------      ----
 Copy/packbits (__iar_packbits_init_single3)
-    1 source range, total size 0x15 (23% of destination):
-           0x800'0b84  0x15
-    1 destination range, total size 0x58:
-          0x2000'0000  0x58
+    1 source range, total size 0x17 (23% of destination):
+           0x800'0bc0  0x17
+    1 destination range, total size 0x60:
+          0x2000'0000  0x60
 
 
 
@@ -154,10 +157,11 @@ C:\Users\testHome\Documents\ARMProgrammingNew\downloadsSTM32100BEVAL\STM32F10x_S
     Total:                    2 556       21       88
 
 dl7M_tln.a: [2]
+    XShttio.o                    12        2        8
     exit.o                        4
     low_level_init.o              4
     -------------------------------------------------
-    Total:                        8
+    Total:                       20        2        8
 
 rt7M_tl.a: [3]
     ABImemcpy_unaligned.o       118
@@ -173,13 +177,14 @@ rt7M_tl.a: [3]
 
 shb_l.a: [4]
     exit.o                       20
+    iarttio.o                    48
     -------------------------------------------------
-    Total:                       20
+    Total:                       68
 
     Gaps                          4
     Linker created                        16    1 024
 -----------------------------------------------------
-    Grand Total:              2 932       37    1 112
+    Grand Total:              2 992       39    1 120
 
 
 *******************************************************************************
@@ -188,18 +193,18 @@ shb_l.a: [4]
 
 Entry                       Address  Size  Type      Object
 -----                       -------  ----  ----      ------
-.iar.init_table$$Base    0x800'0b20         --   Gb  - Linker created -
-.iar.init_table$$Limit   0x800'0b30         --   Gb  - Linker created -
-?main                    0x800'0b31        Code  Gb  cmain.o [3]
+.iar.init_table$$Base    0x800'0b5c         --   Gb  - Linker created -
+.iar.init_table$$Limit   0x800'0b6c         --   Gb  - Linker created -
+?main                    0x800'0b6d        Code  Gb  cmain.o [3]
 ADCPrescTable           0x2000'0010   0x4  Data  Lc  stm32f10x_rcc.o [1]
 APBAHBPrescTable        0x2000'0000  0x10  Data  Lc  stm32f10x_rcc.o [1]
-CSTACK$$Base            0x2000'0058         --   Gb  - Linker created -
-CSTACK$$Limit           0x2000'0458         --   Gb  - Linker created -
+CSTACK$$Base            0x2000'0060         --   Gb  - Linker created -
+CSTACK$$Limit           0x2000'0460         --   Gb  - Linker created -
 Config_GPIO              0x800'016d  0x3e  Code  Gb  main.o [1]
 Delay_ms                 0x800'01ef  0x30  Code  Gb  main.o [1]
 Enable_Clock             0x800'01ab  0x1e  Code  Gb  main.o [1]
 GPIO_Init                0x800'0891  0xc0  Code  Gb  stm32f10x_gpio.o [1]
-GPIO_InitStructure      0x2000'0014   0x4  Data  Gb  main.o [1]
+GPIO_InitStructure      0x2000'001c   0x4  Data  Gb  main.o [1]
 GPIO_ResetBits           0x800'0957   0x6  Code  Gb  stm32f10x_gpio.o [1]
 GPIO_SetBits             0x800'0951   0x6  Code  Gb  stm32f10x_gpio.o [1]
 I2C_AcknowledgeConfig    0x800'07d5  0x1c  Code  Gb  stm32f10x_i2c.o [1]
@@ -211,7 +216,7 @@ I2C_GenerateSTOP         0x800'07b9  0x1c  Code  Gb  stm32f10x_i2c.o [1]
 I2C_GetFlagStatus        0x800'084f  0x42  Code  Gb  stm32f10x_i2c.o [1]
 I2C_ITConfig             0x800'07f1  0x18  Code  Gb  stm32f10x_i2c.o [1]
 I2C_Init                 0x800'06a9  0xc6  Code  Gb  stm32f10x_i2c.o [1]
-I2C_InitStructure       0x2000'0018  0x10  Data  Gb  main.o [1]
+I2C_InitStructure       0x2000'0020  0x10  Data  Gb  main.o [1]
 I2C_ReceiveData          0x800'080f   0x6  Code  Gb  stm32f10x_i2c.o [1]
 I2C_Send7bitAddress      0x800'0815  0x16  Code  Gb  stm32f10x_i2c.o [1]
 I2C_SendData             0x800'0809   0x6  Code  Gb  stm32f10x_i2c.o [1]
@@ -221,39 +226,42 @@ RCC_APB1PeriphResetCmd   0x800'062f  0x1c  Code  Gb  stm32f10x_rcc.o [1]
 RCC_APB2PeriphClockCmd   0x800'05f7  0x1c  Code  Gb  stm32f10x_rcc.o [1]
 RCC_GetClocksFreq        0x800'0547  0xb0  Code  Gb  stm32f10x_rcc.o [1]
 RCC_GetSYSCLKSource      0x800'053d   0xa  Code  Gb  stm32f10x_rcc.o [1]
-RegVal                  0x2000'0056   0x1  Data  Gb  main.o [1]
-Region$$Table$$Base      0x800'0b20         --   Gb  - Linker created -
-Region$$Table$$Limit     0x800'0b30         --   Gb  - Linker created -
-Status                  0x2000'0051   0x1  Data  Gb  main.o [1]
+RegVal                  0x2000'005e   0x1  Data  Gb  main.o [1]
+Region$$Table$$Base      0x800'0b5c         --   Gb  - Linker created -
+Region$$Table$$Limit     0x800'0b6c         --   Gb  - Linker created -
+Status                  0x2000'0059   0x1  Data  Gb  main.o [1]
 TIM_Cmd                  0x800'09ef  0x1c  Code  Gb  stm32f10x_tim.o [1]
 TIM_GetCounter           0x800'0a0f   0x4  Code  Gb  stm32f10x_tim.o [1]
 TIM_SetCounter           0x800'0a0b   0x4  Code  Gb  stm32f10x_tim.o [1]
 TIM_TimeBaseInit         0x800'095d  0x92  Code  Gb  stm32f10x_tim.o [1]
 Timer_Configuration      0x800'01c9  0x26  Code  Gb  main.o [1]
-__cmain                  0x800'0b31        Code  Gb  cmain.o [3]
-__exit                   0x800'0b65  0x14  Code  Gb  exit.o [4]
-__iar_data_init3         0x800'0af9  0x28  Code  Gb  data_init.o [3]
+__cmain                  0x800'0b6d        Code  Gb  cmain.o [3]
+__exit                   0x800'0ba1  0x14  Code  Gb  exit.o [4]
+__iar_close_ttio         0x800'0af9  0x2e  Code  Gb  iarttio.o [4]
+__iar_data_init3         0x800'0b35  0x28  Code  Gb  data_init.o [3]
+__iar_lookup_ttioh       0x800'0b29   0x4  Code  Gb  XShttio.o [2]
 __iar_packbits_init_single3
                          0x800'0abf  0x38  Code  Gb  packbits_init_single.o [3]
-__iar_program_start      0x800'0b79        Code  Gb  cstartup_M.o [3]
+__iar_program_start      0x800'0bb5        Code  Gb  cstartup_M.o [3]
+__iar_ttio_handles      0x2000'0014   0x8  Data  Lc  XShttio.o [2]
 __iar_unaligned_memcpy   0x800'0a49        Code  Gb  ABImemcpy_unaligned.o [3]
 __iar_unaligned_memcpy4
                          0x800'0a69        Code  Gb  ABImemcpy_unaligned.o [3]
 __iar_unaligned_memcpy8
                          0x800'0a69        Code  Gb  ABImemcpy_unaligned.o [3]
-__low_level_init         0x800'0b4f   0x4  Code  Gb  low_level_init.o [2]
+__low_level_init         0x800'0b8b   0x4  Code  Gb  low_level_init.o [2]
 __vector_table           0x800'0000        Data  Gb  vector_table_M.o [3]
-_call_main               0x800'0b3d        Code  Gb  cmain.o [3]
-_exit                    0x800'0b59        Code  Gb  cexit.o [3]
-_main                    0x800'0b4b        Code  Gb  cmain.o [3]
-b0                      0x2000'0052   0x1  Data  Gb  main.o [1]
-b1                      0x2000'0053   0x1  Data  Gb  main.o [1]
-b2                      0x2000'0054   0x1  Data  Gb  main.o [1]
-b3                      0x2000'0055   0x1  Data  Gb  main.o [1]
-blue                    0x2000'0038   0x4  Data  Gb  main.o [1]
+_call_main               0x800'0b79        Code  Gb  cmain.o [3]
+_exit                    0x800'0b95        Code  Gb  cexit.o [3]
+_main                    0x800'0b87        Code  Gb  cmain.o [3]
+b0                      0x2000'005a   0x1  Data  Gb  main.o [1]
+b1                      0x2000'005b   0x1  Data  Gb  main.o [1]
+b2                      0x2000'005c   0x1  Data  Gb  main.o [1]
+b3                      0x2000'005d   0x1  Data  Gb  main.o [1]
+blue                    0x2000'0040   0x4  Data  Gb  main.o [1]
 clearDataAvailable       0x800'021f  0x18  Code  Gb  main.o [1]
 dataAvailable            0x800'0237  0x12  Code  Gb  main.o [1]
-exit                     0x800'0b53   0x4  Code  Gb  exit.o [2]
+exit                     0x800'0b8f   0x4  Code  Gb  exit.o [2]
 getCalibratedBlue        0x800'0253   0xa  Code  Gb  main.o [1]
 getCalibratedGreen       0x800'025d   0xa  Code  Gb  main.o [1]
 getCalibratedOrange      0x800'0271   0xa  Code  Gb  main.o [1]
@@ -261,21 +269,21 @@ getCalibratedRed         0x800'027b   0xa  Code  Gb  main.o [1]
 getCalibratedValue       0x800'0285  0x7a  Code  Gb  main.o [1]
 getCalibratedViolet      0x800'0249   0xa  Code  Gb  main.o [1]
 getCalibratedYellow      0x800'0267   0xa  Code  Gb  main.o [1]
-green                   0x2000'003c   0x4  Data  Gb  main.o [1]
+green                   0x2000'0044   0x4  Data  Gb  main.o [1]
 main                     0x800'0041  0xe6  Code  Gb  main.o [1]
 memcpy                   0x800'0a3d   0xc  Code  Gb  memcpy.o [3]
-myFloat                 0x2000'004c   0x4  Data  Gb  main.o [1]
-orange                  0x2000'0044   0x4  Data  Gb  main.o [1]
+myFloat                 0x2000'0054   0x4  Data  Gb  main.o [1]
+orange                  0x2000'004c   0x4  Data  Gb  main.o [1]
 readRegisterOneByte      0x800'0397  0xc2  Code  Gb  main.o [1]
-readVal                 0x2000'0050   0x1  Data  Gb  main.o [1]
-red                     0x2000'0048   0x4  Data  Gb  main.o [1]
-result                  0x2000'0057   0x1  Data  Gb  main.o [1]
-timerInitStructure      0x2000'0028   0xc  Data  Gb  main.o [1]
-violet                  0x2000'0034   0x4  Data  Gb  main.o [1]
+readVal                 0x2000'0058   0x1  Data  Gb  main.o [1]
+red                     0x2000'0050   0x4  Data  Gb  main.o [1]
+result                  0x2000'005f   0x1  Data  Gb  main.o [1]
+timerInitStructure      0x2000'0030   0xc  Data  Gb  main.o [1]
+violet                  0x2000'003c   0x4  Data  Gb  main.o [1]
 virtualReadReg           0x800'02ff  0x52  Code  Gb  main.o [1]
 virtualWriteReg          0x800'0351  0x46  Code  Gb  main.o [1]
 writeRegister            0x800'0459  0x78  Code  Gb  main.o [1]
-yellow                  0x2000'0040   0x4  Data  Gb  main.o [1]
+yellow                  0x2000'0048   0x4  Data  Gb  main.o [1]
 
 
 [1] = C:\Users\testHome\Documents\ARMProgrammingNew\downloadsSTM32100BEVAL\STM32F10x_StdPeriph_Lib_V3.5.0\Project\AS7262Cloned\EWARMv5\Debug\Obj
@@ -283,9 +291,9 @@ yellow                  0x2000'0040   0x4  Data  Gb  main.o [1]
 [3] = rt7M_tl.a
 [4] = shb_l.a
 
-  2 932 bytes of readonly  code memory
-     37 bytes of readonly  data memory
-  1 112 bytes of readwrite data memory
+  2 992 bytes of readonly  code memory
+     39 bytes of readonly  data memory
+  1 120 bytes of readwrite data memory
 
 Errors: none
 Warnings: none
