@@ -47,6 +47,7 @@ void Delay_ms(int ms);
 void Enable_Clock(void);
 void Config_GPIO(void);
 void Init_I2C(void);
+void mergeTest(void);
 
 //AS7262 functions
 void Timer_Configuration();
@@ -128,6 +129,10 @@ int main(void)
         
      
   }
+}
+
+void merge(){
+  printf("Testing merge");
 }
 
 void Init_I2C(void){
