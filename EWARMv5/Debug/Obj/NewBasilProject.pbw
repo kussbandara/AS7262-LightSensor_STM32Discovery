@@ -109908,34 +109908,6 @@
     "scope": null
   },
   {
-    "ID": "c:@F@mergeTest1",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void mergeTest1(void)",
-    "location": {
-      "column": "6",
-      "line": "50",
-      "path": "C:\\Users\\testHome\\Documents\\ARMProgrammingNew\\downloadsSTM32100BEVAL\\STM32F10x_StdPeriph_Lib_V3.5.0\\Project\\AS7262Cloned\\main.c"
-    },
-    "name": "mergeTest1",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@mergeTest2",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void mergeTest2(void)",
-    "location": {
-      "column": "6",
-      "line": "51",
-      "path": "C:\\Users\\testHome\\Documents\\ARMProgrammingNew\\downloadsSTM32100BEVAL\\STM32F10x_StdPeriph_Lib_V3.5.0\\Project\\AS7262Cloned\\main.c"
-    },
-    "name": "mergeTest2",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
     "ID": "c:@F@Timer_Configuration",
     "What": "Function",
     "defdec": "Dec",
@@ -110160,7 +110132,7 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@2050@F@main@a",
+    "ID": "c:main.c@2054@F@main@a",
     "What": "Variable",
     "defdec": "Def",
     "display": "a",
@@ -110174,7 +110146,7 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@2087@F@main@A",
+    "ID": "c:main.c@2091@F@main@A",
     "What": "Variable",
     "defdec": "Def",
     "display": "A",
@@ -110188,7 +110160,7 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@2558@F@main@gain",
+    "ID": "c:main.c@2562@F@main@gain",
     "What": "Variable",
     "defdec": "Def",
     "display": "gain",
@@ -110202,7 +110174,7 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@2583@F@main@value",
+    "ID": "c:main.c@2587@F@main@value",
     "What": "Variable",
     "defdec": "Def",
     "display": "value",
@@ -110216,7 +110188,7 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@2851@F@main@mode",
+    "ID": "c:main.c@2855@F@main@mode",
     "What": "Variable",
     "defdec": "Def",
     "display": "mode",
@@ -110230,7 +110202,7 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@2878@F@main@valueGain",
+    "ID": "c:main.c@2882@F@main@valueGain",
     "What": "Variable",
     "defdec": "Def",
     "display": "valueGain",
@@ -110240,34 +110212,6 @@
       "path": "C:\\Users\\testHome\\Documents\\ARMProgrammingNew\\downloadsSTM32100BEVAL\\STM32F10x_StdPeriph_Lib_V3.5.0\\Project\\AS7262Cloned\\main.c"
     },
     "name": "valueGain",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@mergeTest1",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void mergeTest1(void)",
-    "location": {
-      "column": "6",
-      "line": "134",
-      "path": "C:\\Users\\testHome\\Documents\\ARMProgrammingNew\\downloadsSTM32100BEVAL\\STM32F10x_StdPeriph_Lib_V3.5.0\\Project\\AS7262Cloned\\main.c"
-    },
-    "name": "mergeTest1",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@merge2Test2",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void merge2Test2(void)",
-    "location": {
-      "column": "6",
-      "line": "138",
-      "path": "C:\\Users\\testHome\\Documents\\ARMProgrammingNew\\downloadsSTM32100BEVAL\\STM32F10x_StdPeriph_Lib_V3.5.0\\Project\\AS7262Cloned\\main.c"
-    },
-    "name": "merge2Test2",
     "origin": "project_file",
     "scope": null
   },
@@ -110356,7 +110300,7 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@5598@F@clearDataAvailable@value",
+    "ID": "c:main.c@5606@F@clearDataAvailable@value",
     "What": "Variable",
     "defdec": "Def",
     "display": "value",
@@ -110384,7 +110328,7 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@5755@F@dataAvailable@value",
+    "ID": "c:main.c@5763@F@dataAvailable@value",
     "What": "Variable",
     "defdec": "Def",
     "display": "value",
@@ -110412,7 +110356,7 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@5869@F@getCalibratedViolet@result",
+    "ID": "c:main.c@5877@F@getCalibratedViolet@result",
     "What": "Variable",
     "defdec": "Def",
     "display": "result",
@@ -110440,7 +110384,7 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@5980@F@getCalibratedBlue@result",
+    "ID": "c:main.c@5988@F@getCalibratedBlue@result",
     "What": "Variable",
     "defdec": "Def",
     "display": "result",
@@ -110468,7 +110412,7 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@6092@F@getCalibratedGreen@result",
+    "ID": "c:main.c@6100@F@getCalibratedGreen@result",
     "What": "Variable",
     "defdec": "Def",
     "display": "result",
@@ -110496,7 +110440,7 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@6205@F@getCalibratedYellow@result",
+    "ID": "c:main.c@6213@F@getCalibratedYellow@result",
     "What": "Variable",
     "defdec": "Def",
     "display": "result",
@@ -110524,7 +110468,7 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@6318@F@getCalibratedOrange@result",
+    "ID": "c:main.c@6326@F@getCalibratedOrange@result",
     "What": "Variable",
     "defdec": "Def",
     "display": "result",
@@ -110552,7 +110496,7 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@6428@F@getCalibratedRed@result",
+    "ID": "c:main.c@6436@F@getCalibratedRed@result",
     "What": "Variable",
     "defdec": "Def",
     "display": "result",
@@ -110580,7 +110524,7 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@6558@F@getCalibratedValue@calBytes",
+    "ID": "c:main.c@6566@F@getCalibratedValue@calBytes",
     "What": "Variable",
     "defdec": "Def",
     "display": "calBytes",
