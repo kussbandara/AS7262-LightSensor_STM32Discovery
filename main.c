@@ -27,6 +27,7 @@ float temparatureValue;
 //float k=0;
 //float n=0;
 int j=5;
+int p=10;
 char str[];
 //AS7262 
 uint8_t readVal=0;
