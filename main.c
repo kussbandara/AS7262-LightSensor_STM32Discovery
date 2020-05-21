@@ -23,8 +23,7 @@ int CHIP1=1;
 int CHIP2=2;
 float humidityValue;
 float temparatureValue;
-int i;
-float f=0;
+
 char str[];
 //AS7262 
 uint8_t readVal=0;
@@ -47,8 +46,7 @@ void Delay_ms(int ms);
 void Enable_Clock(void);
 void Config_GPIO(void);
 void Init_I2C(void);
-//void mergeTest1(void);
-//void mergeTest2(void);
+
 //AS7262 functions
 void Timer_Configuration();
 void Delay_ms(int);
@@ -131,13 +129,7 @@ int main(void)
   }
 }
 
-/*void mergeTest1(){
-  printf("Testing merge");
-}
 
-void merge2Test2(){
-  printf("Testing merge2");
-}*/
 
 void Init_I2C(void){
     
