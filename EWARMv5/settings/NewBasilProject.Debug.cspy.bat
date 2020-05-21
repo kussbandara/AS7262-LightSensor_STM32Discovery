@@ -25,7 +25,7 @@ if not "%~1" == "" goto debugFile
 
 @echo on 
 
-"C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.2\common\bin\cspybat" -f "C:\Users\testHome\Documents\ARMProgrammingNew\an3268\stm32vldiscovery_package\Project\Examples\NewBasilProjectLightSensor - Copy\EWARMv5\settings\NewBasilProject.Debug.general.xcl" --backend -f "C:\Users\testHome\Documents\ARMProgrammingNew\an3268\stm32vldiscovery_package\Project\Examples\NewBasilProjectLightSensor - Copy\EWARMv5\settings\NewBasilProject.Debug.driver.xcl" 
+"C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.2\common\bin\cspybat" -f "C:\Users\testHome\Documents\ARMProgrammingNew\downloadsSTM32100BEVAL\STM32F10x_StdPeriph_Lib_V3.5.0\Project\AS7262Cloned\EWARMv5\settings\NewBasilProject.Debug.general.xcl" --backend -f "C:\Users\testHome\Documents\ARMProgrammingNew\downloadsSTM32100BEVAL\STM32F10x_StdPeriph_Lib_V3.5.0\Project\AS7262Cloned\EWARMv5\settings\NewBasilProject.Debug.driver.xcl" 
 
 @echo off 
 goto end 
@@ -34,7 +34,7 @@ goto end
 
 @echo on 
 
-"C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.2\common\bin\cspybat" -f "C:\Users\testHome\Documents\ARMProgrammingNew\an3268\stm32vldiscovery_package\Project\Examples\NewBasilProjectLightSensor - Copy\EWARMv5\settings\NewBasilProject.Debug.general.xcl" "--debug_file=%~1" --backend -f "C:\Users\testHome\Documents\ARMProgrammingNew\an3268\stm32vldiscovery_package\Project\Examples\NewBasilProjectLightSensor - Copy\EWARMv5\settings\NewBasilProject.Debug.driver.xcl" 
+"C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.2\common\bin\cspybat" -f "C:\Users\testHome\Documents\ARMProgrammingNew\downloadsSTM32100BEVAL\STM32F10x_StdPeriph_Lib_V3.5.0\Project\AS7262Cloned\EWARMv5\settings\NewBasilProject.Debug.general.xcl" "--debug_file=%~1" --backend -f "C:\Users\testHome\Documents\ARMProgrammingNew\downloadsSTM32100BEVAL\STM32F10x_StdPeriph_Lib_V3.5.0\Project\AS7262Cloned\EWARMv5\settings\NewBasilProject.Debug.driver.xcl" 
 
 @echo off 
 :end
