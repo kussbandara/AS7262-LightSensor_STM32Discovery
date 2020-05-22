@@ -50,6 +50,9 @@ void Delay_ms(int ms);
 void Enable_Clock(void);
 void Config_GPIO(void);
 void Init_I2C(void);
+void Test1(void);
+
+
 
 //AS7262 functions
 void Timer_Configuration();
@@ -133,6 +136,11 @@ int main(void)
   }
 }
 
+
+void Test1(){
+  
+  printf("testing");
+}
 
 
 void Init_I2C(void){

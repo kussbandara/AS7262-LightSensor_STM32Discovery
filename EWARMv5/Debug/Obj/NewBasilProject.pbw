@@ -109880,13 +109880,27 @@
     "scope": null
   },
   {
+    "ID": "c:@F@Test1",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void Test1(void)",
+    "location": {
+      "column": "6",
+      "line": "53",
+      "path": "C:\\Users\\testHome\\Documents\\ARMProgrammingNew\\downloadsSTM32100BEVAL\\STM32F10x_StdPeriph_Lib_V3.5.0\\Project\\AS7262Cloned\\main.c"
+    },
+    "name": "Test1",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
     "ID": "c:@F@Timer_Configuration",
     "What": "Function",
     "defdec": "Dec",
     "display": "void Timer_Configuration(void)",
     "location": {
       "column": "6",
-      "line": "55",
+      "line": "58",
       "path": "C:\\Users\\testHome\\Documents\\ARMProgrammingNew\\downloadsSTM32100BEVAL\\STM32F10x_StdPeriph_Lib_V3.5.0\\Project\\AS7262Cloned\\main.c"
     },
     "name": "Timer_Configuration",
@@ -109900,7 +109914,7 @@
     "display": "void Delay_ms(int)",
     "location": {
       "column": "6",
-      "line": "56",
+      "line": "59",
       "path": "C:\\Users\\testHome\\Documents\\ARMProgrammingNew\\downloadsSTM32100BEVAL\\STM32F10x_StdPeriph_Lib_V3.5.0\\Project\\AS7262Cloned\\main.c"
     },
     "name": "Delay_ms",
@@ -109914,7 +109928,7 @@
     "display": "uint8_t virtualReadReg(uint8_t)",
     "location": {
       "column": "9",
-      "line": "57",
+      "line": "60",
       "path": "C:\\Users\\testHome\\Documents\\ARMProgrammingNew\\downloadsSTM32100BEVAL\\STM32F10x_StdPeriph_Lib_V3.5.0\\Project\\AS7262Cloned\\main.c"
     },
     "name": "virtualReadReg",
@@ -109928,7 +109942,7 @@
     "display": "void virtualWriteReg(uint8_t, uint8_t)",
     "location": {
       "column": "6",
-      "line": "58",
+      "line": "61",
       "path": "C:\\Users\\testHome\\Documents\\ARMProgrammingNew\\downloadsSTM32100BEVAL\\STM32F10x_StdPeriph_Lib_V3.5.0\\Project\\AS7262Cloned\\main.c"
     },
     "name": "virtualWriteReg",
@@ -109942,7 +109956,7 @@
     "display": "void clearDataAvailable(void)",
     "location": {
       "column": "6",
-      "line": "59",
+      "line": "62",
       "path": "C:\\Users\\testHome\\Documents\\ARMProgrammingNew\\downloadsSTM32100BEVAL\\STM32F10x_StdPeriph_Lib_V3.5.0\\Project\\AS7262Cloned\\main.c"
     },
     "name": "clearDataAvailable",
@@ -109956,7 +109970,7 @@
     "display": "bool dataAvailable(void)",
     "location": {
       "column": "6",
-      "line": "60",
+      "line": "63",
       "path": "C:\\Users\\testHome\\Documents\\ARMProgrammingNew\\downloadsSTM32100BEVAL\\STM32F10x_StdPeriph_Lib_V3.5.0\\Project\\AS7262Cloned\\main.c"
     },
     "name": "dataAvailable",
@@ -109970,7 +109984,7 @@
     "display": "float getCalibratedViolet(void)",
     "location": {
       "column": "7",
-      "line": "61",
+      "line": "64",
       "path": "C:\\Users\\testHome\\Documents\\ARMProgrammingNew\\downloadsSTM32100BEVAL\\STM32F10x_StdPeriph_Lib_V3.5.0\\Project\\AS7262Cloned\\main.c"
     },
     "name": "getCalibratedViolet",
@@ -109984,7 +109998,7 @@
     "display": "float getCalibratedBlue(void)",
     "location": {
       "column": "7",
-      "line": "62",
+      "line": "65",
       "path": "C:\\Users\\testHome\\Documents\\ARMProgrammingNew\\downloadsSTM32100BEVAL\\STM32F10x_StdPeriph_Lib_V3.5.0\\Project\\AS7262Cloned\\main.c"
     },
     "name": "getCalibratedBlue",
@@ -109998,7 +110012,7 @@
     "display": "float getCalibratedGreen(void)",
     "location": {
       "column": "7",
-      "line": "63",
+      "line": "66",
       "path": "C:\\Users\\testHome\\Documents\\ARMProgrammingNew\\downloadsSTM32100BEVAL\\STM32F10x_StdPeriph_Lib_V3.5.0\\Project\\AS7262Cloned\\main.c"
     },
     "name": "getCalibratedGreen",
@@ -110012,7 +110026,7 @@
     "display": "float getCalibratedYellow(void)",
     "location": {
       "column": "7",
-      "line": "64",
+      "line": "67",
       "path": "C:\\Users\\testHome\\Documents\\ARMProgrammingNew\\downloadsSTM32100BEVAL\\STM32F10x_StdPeriph_Lib_V3.5.0\\Project\\AS7262Cloned\\main.c"
     },
     "name": "getCalibratedYellow",
@@ -110026,7 +110040,7 @@
     "display": "float getCalibratedOrange(void)",
     "location": {
       "column": "7",
-      "line": "65",
+      "line": "68",
       "path": "C:\\Users\\testHome\\Documents\\ARMProgrammingNew\\downloadsSTM32100BEVAL\\STM32F10x_StdPeriph_Lib_V3.5.0\\Project\\AS7262Cloned\\main.c"
     },
     "name": "getCalibratedOrange",
@@ -110040,7 +110054,7 @@
     "display": "float getCalibratedRed(void)",
     "location": {
       "column": "7",
-      "line": "66",
+      "line": "69",
       "path": "C:\\Users\\testHome\\Documents\\ARMProgrammingNew\\downloadsSTM32100BEVAL\\STM32F10x_StdPeriph_Lib_V3.5.0\\Project\\AS7262Cloned\\main.c"
     },
     "name": "getCalibratedRed",
@@ -110054,7 +110068,7 @@
     "display": "float getCalibratedValue(uint8_t)",
     "location": {
       "column": "7",
-      "line": "67",
+      "line": "70",
       "path": "C:\\Users\\testHome\\Documents\\ARMProgrammingNew\\downloadsSTM32100BEVAL\\STM32F10x_StdPeriph_Lib_V3.5.0\\Project\\AS7262Cloned\\main.c"
     },
     "name": "getCalibratedValue",
@@ -110068,7 +110082,7 @@
     "display": "void writeRegister(uint8_t, uint8_t)",
     "location": {
       "column": "6",
-      "line": "68",
+      "line": "71",
       "path": "C:\\Users\\testHome\\Documents\\ARMProgrammingNew\\downloadsSTM32100BEVAL\\STM32F10x_StdPeriph_Lib_V3.5.0\\Project\\AS7262Cloned\\main.c"
     },
     "name": "writeRegister",
@@ -110082,7 +110096,7 @@
     "display": "uint8_t readRegisterOneByte(int8_t, int8_t)",
     "location": {
       "column": "9",
-      "line": "69",
+      "line": "72",
       "path": "C:\\Users\\testHome\\Documents\\ARMProgrammingNew\\downloadsSTM32100BEVAL\\STM32F10x_StdPeriph_Lib_V3.5.0\\Project\\AS7262Cloned\\main.c"
     },
     "name": "readRegisterOneByte",
@@ -110096,7 +110110,7 @@
     "display": "int main(void)",
     "location": {
       "column": "5",
-      "line": "78",
+      "line": "81",
       "path": "C:\\Users\\testHome\\Documents\\ARMProgrammingNew\\downloadsSTM32100BEVAL\\STM32F10x_StdPeriph_Lib_V3.5.0\\Project\\AS7262Cloned\\main.c"
     },
     "name": "main",
@@ -110104,13 +110118,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@2049@F@main@a",
+    "ID": "c:main.c@2072@F@main@a",
     "What": "Variable",
     "defdec": "Def",
     "display": "a",
     "location": {
       "column": "11",
-      "line": "81",
+      "line": "84",
       "path": "C:\\Users\\testHome\\Documents\\ARMProgrammingNew\\downloadsSTM32100BEVAL\\STM32F10x_StdPeriph_Lib_V3.5.0\\Project\\AS7262Cloned\\main.c"
     },
     "name": "a",
@@ -110118,13 +110132,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@2086@F@main@A",
+    "ID": "c:main.c@2109@F@main@A",
     "What": "Variable",
     "defdec": "Def",
     "display": "A",
     "location": {
       "column": "21",
-      "line": "82",
+      "line": "85",
       "path": "C:\\Users\\testHome\\Documents\\ARMProgrammingNew\\downloadsSTM32100BEVAL\\STM32F10x_StdPeriph_Lib_V3.5.0\\Project\\AS7262Cloned\\main.c"
     },
     "name": "A",
@@ -110132,13 +110146,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@2557@F@main@gain",
+    "ID": "c:main.c@2580@F@main@gain",
     "What": "Variable",
     "defdec": "Def",
     "display": "gain",
     "location": {
       "column": "14",
-      "line": "103",
+      "line": "106",
       "path": "C:\\Users\\testHome\\Documents\\ARMProgrammingNew\\downloadsSTM32100BEVAL\\STM32F10x_StdPeriph_Lib_V3.5.0\\Project\\AS7262Cloned\\main.c"
     },
     "name": "gain",
@@ -110146,13 +110160,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@2582@F@main@value",
+    "ID": "c:main.c@2605@F@main@value",
     "What": "Variable",
     "defdec": "Def",
     "display": "value",
     "location": {
       "column": "14",
-      "line": "104",
+      "line": "107",
       "path": "C:\\Users\\testHome\\Documents\\ARMProgrammingNew\\downloadsSTM32100BEVAL\\STM32F10x_StdPeriph_Lib_V3.5.0\\Project\\AS7262Cloned\\main.c"
     },
     "name": "value",
@@ -110160,13 +110174,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@2850@F@main@mode",
+    "ID": "c:main.c@2873@F@main@mode",
     "What": "Variable",
     "defdec": "Def",
     "display": "mode",
     "location": {
       "column": "15",
-      "line": "111",
+      "line": "114",
       "path": "C:\\Users\\testHome\\Documents\\ARMProgrammingNew\\downloadsSTM32100BEVAL\\STM32F10x_StdPeriph_Lib_V3.5.0\\Project\\AS7262Cloned\\main.c"
     },
     "name": "mode",
@@ -110174,16 +110188,30 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@2877@F@main@valueGain",
+    "ID": "c:main.c@2900@F@main@valueGain",
     "What": "Variable",
     "defdec": "Def",
     "display": "valueGain",
     "location": {
       "column": "15",
-      "line": "112",
+      "line": "115",
       "path": "C:\\Users\\testHome\\Documents\\ARMProgrammingNew\\downloadsSTM32100BEVAL\\STM32F10x_StdPeriph_Lib_V3.5.0\\Project\\AS7262Cloned\\main.c"
     },
     "name": "valueGain",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@Test1",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void Test1(void)",
+    "location": {
+      "column": "6",
+      "line": "140",
+      "path": "C:\\Users\\testHome\\Documents\\ARMProgrammingNew\\downloadsSTM32100BEVAL\\STM32F10x_StdPeriph_Lib_V3.5.0\\Project\\AS7262Cloned\\main.c"
+    },
+    "name": "Test1",
     "origin": "project_file",
     "scope": null
   },
@@ -110194,7 +110222,7 @@
     "display": "void Init_I2C(void)",
     "location": {
       "column": "6",
-      "line": "138",
+      "line": "146",
       "path": "C:\\Users\\testHome\\Documents\\ARMProgrammingNew\\downloadsSTM32100BEVAL\\STM32F10x_StdPeriph_Lib_V3.5.0\\Project\\AS7262Cloned\\main.c"
     },
     "name": "Init_I2C",
@@ -110208,7 +110236,7 @@
     "display": "void Config_GPIO(void)",
     "location": {
       "column": "6",
-      "line": "157",
+      "line": "165",
       "path": "C:\\Users\\testHome\\Documents\\ARMProgrammingNew\\downloadsSTM32100BEVAL\\STM32F10x_StdPeriph_Lib_V3.5.0\\Project\\AS7262Cloned\\main.c"
     },
     "name": "Config_GPIO",
@@ -110222,7 +110250,7 @@
     "display": "void Enable_Clock(void)",
     "location": {
       "column": "6",
-      "line": "176",
+      "line": "184",
       "path": "C:\\Users\\testHome\\Documents\\ARMProgrammingNew\\downloadsSTM32100BEVAL\\STM32F10x_StdPeriph_Lib_V3.5.0\\Project\\AS7262Cloned\\main.c"
     },
     "name": "Enable_Clock",
@@ -110236,7 +110264,7 @@
     "display": "void Timer_Configuration(void)",
     "location": {
       "column": "7",
-      "line": "182",
+      "line": "190",
       "path": "C:\\Users\\testHome\\Documents\\ARMProgrammingNew\\downloadsSTM32100BEVAL\\STM32F10x_StdPeriph_Lib_V3.5.0\\Project\\AS7262Cloned\\main.c"
     },
     "name": "Timer_Configuration",
@@ -110250,7 +110278,7 @@
     "display": "void Delay_ms(int)",
     "location": {
       "column": "6",
-      "line": "194",
+      "line": "202",
       "path": "C:\\Users\\testHome\\Documents\\ARMProgrammingNew\\downloadsSTM32100BEVAL\\STM32F10x_StdPeriph_Lib_V3.5.0\\Project\\AS7262Cloned\\main.c"
     },
     "name": "Delay_ms",
@@ -110264,7 +110292,7 @@
     "display": "void clearDataAvailable(void)",
     "location": {
       "column": "7",
-      "line": "217",
+      "line": "225",
       "path": "C:\\Users\\testHome\\Documents\\ARMProgrammingNew\\downloadsSTM32100BEVAL\\STM32F10x_StdPeriph_Lib_V3.5.0\\Project\\AS7262Cloned\\main.c"
     },
     "name": "clearDataAvailable",
@@ -110272,13 +110300,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@5493@F@clearDataAvailable@value",
+    "ID": "c:main.c@5562@F@clearDataAvailable@value",
     "What": "Variable",
     "defdec": "Def",
     "display": "value",
     "location": {
       "column": "13",
-      "line": "218",
+      "line": "226",
       "path": "C:\\Users\\testHome\\Documents\\ARMProgrammingNew\\downloadsSTM32100BEVAL\\STM32F10x_StdPeriph_Lib_V3.5.0\\Project\\AS7262Cloned\\main.c"
     },
     "name": "value",
@@ -110292,7 +110320,7 @@
     "display": "bool dataAvailable(void)",
     "location": {
       "column": "8",
-      "line": "223",
+      "line": "231",
       "path": "C:\\Users\\testHome\\Documents\\ARMProgrammingNew\\downloadsSTM32100BEVAL\\STM32F10x_StdPeriph_Lib_V3.5.0\\Project\\AS7262Cloned\\main.c"
     },
     "name": "dataAvailable",
@@ -110300,13 +110328,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@5650@F@dataAvailable@value",
+    "ID": "c:main.c@5719@F@dataAvailable@value",
     "What": "Variable",
     "defdec": "Def",
     "display": "value",
     "location": {
       "column": "13",
-      "line": "224",
+      "line": "232",
       "path": "C:\\Users\\testHome\\Documents\\ARMProgrammingNew\\downloadsSTM32100BEVAL\\STM32F10x_StdPeriph_Lib_V3.5.0\\Project\\AS7262Cloned\\main.c"
     },
     "name": "value",
@@ -110320,7 +110348,7 @@
     "display": "float getCalibratedViolet(void)",
     "location": {
       "column": "7",
-      "line": "228",
+      "line": "236",
       "path": "C:\\Users\\testHome\\Documents\\ARMProgrammingNew\\downloadsSTM32100BEVAL\\STM32F10x_StdPeriph_Lib_V3.5.0\\Project\\AS7262Cloned\\main.c"
     },
     "name": "getCalibratedViolet",
@@ -110328,13 +110356,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@5764@F@getCalibratedViolet@result",
+    "ID": "c:main.c@5833@F@getCalibratedViolet@result",
     "What": "Variable",
     "defdec": "Def",
     "display": "result",
     "location": {
       "column": "11",
-      "line": "229",
+      "line": "237",
       "path": "C:\\Users\\testHome\\Documents\\ARMProgrammingNew\\downloadsSTM32100BEVAL\\STM32F10x_StdPeriph_Lib_V3.5.0\\Project\\AS7262Cloned\\main.c"
     },
     "name": "result",
@@ -110348,7 +110376,7 @@
     "display": "float getCalibratedBlue(void)",
     "location": {
       "column": "9",
-      "line": "233",
+      "line": "241",
       "path": "C:\\Users\\testHome\\Documents\\ARMProgrammingNew\\downloadsSTM32100BEVAL\\STM32F10x_StdPeriph_Lib_V3.5.0\\Project\\AS7262Cloned\\main.c"
     },
     "name": "getCalibratedBlue",
@@ -110356,13 +110384,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@5875@F@getCalibratedBlue@result",
+    "ID": "c:main.c@5944@F@getCalibratedBlue@result",
     "What": "Variable",
     "defdec": "Def",
     "display": "result",
     "location": {
       "column": "11",
-      "line": "234",
+      "line": "242",
       "path": "C:\\Users\\testHome\\Documents\\ARMProgrammingNew\\downloadsSTM32100BEVAL\\STM32F10x_StdPeriph_Lib_V3.5.0\\Project\\AS7262Cloned\\main.c"
     },
     "name": "result",
@@ -110376,7 +110404,7 @@
     "display": "float getCalibratedGreen(void)",
     "location": {
       "column": "9",
-      "line": "238",
+      "line": "246",
       "path": "C:\\Users\\testHome\\Documents\\ARMProgrammingNew\\downloadsSTM32100BEVAL\\STM32F10x_StdPeriph_Lib_V3.5.0\\Project\\AS7262Cloned\\main.c"
     },
     "name": "getCalibratedGreen",
@@ -110384,13 +110412,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@5987@F@getCalibratedGreen@result",
+    "ID": "c:main.c@6056@F@getCalibratedGreen@result",
     "What": "Variable",
     "defdec": "Def",
     "display": "result",
     "location": {
       "column": "11",
-      "line": "239",
+      "line": "247",
       "path": "C:\\Users\\testHome\\Documents\\ARMProgrammingNew\\downloadsSTM32100BEVAL\\STM32F10x_StdPeriph_Lib_V3.5.0\\Project\\AS7262Cloned\\main.c"
     },
     "name": "result",
@@ -110404,7 +110432,7 @@
     "display": "float getCalibratedYellow(void)",
     "location": {
       "column": "9",
-      "line": "243",
+      "line": "251",
       "path": "C:\\Users\\testHome\\Documents\\ARMProgrammingNew\\downloadsSTM32100BEVAL\\STM32F10x_StdPeriph_Lib_V3.5.0\\Project\\AS7262Cloned\\main.c"
     },
     "name": "getCalibratedYellow",
@@ -110412,13 +110440,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@6100@F@getCalibratedYellow@result",
+    "ID": "c:main.c@6169@F@getCalibratedYellow@result",
     "What": "Variable",
     "defdec": "Def",
     "display": "result",
     "location": {
       "column": "11",
-      "line": "244",
+      "line": "252",
       "path": "C:\\Users\\testHome\\Documents\\ARMProgrammingNew\\downloadsSTM32100BEVAL\\STM32F10x_StdPeriph_Lib_V3.5.0\\Project\\AS7262Cloned\\main.c"
     },
     "name": "result",
@@ -110432,7 +110460,7 @@
     "display": "float getCalibratedOrange(void)",
     "location": {
       "column": "9",
-      "line": "248",
+      "line": "256",
       "path": "C:\\Users\\testHome\\Documents\\ARMProgrammingNew\\downloadsSTM32100BEVAL\\STM32F10x_StdPeriph_Lib_V3.5.0\\Project\\AS7262Cloned\\main.c"
     },
     "name": "getCalibratedOrange",
@@ -110440,13 +110468,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@6213@F@getCalibratedOrange@result",
+    "ID": "c:main.c@6282@F@getCalibratedOrange@result",
     "What": "Variable",
     "defdec": "Def",
     "display": "result",
     "location": {
       "column": "11",
-      "line": "249",
+      "line": "257",
       "path": "C:\\Users\\testHome\\Documents\\ARMProgrammingNew\\downloadsSTM32100BEVAL\\STM32F10x_StdPeriph_Lib_V3.5.0\\Project\\AS7262Cloned\\main.c"
     },
     "name": "result",
@@ -110460,7 +110488,7 @@
     "display": "float getCalibratedRed(void)",
     "location": {
       "column": "9",
-      "line": "253",
+      "line": "261",
       "path": "C:\\Users\\testHome\\Documents\\ARMProgrammingNew\\downloadsSTM32100BEVAL\\STM32F10x_StdPeriph_Lib_V3.5.0\\Project\\AS7262Cloned\\main.c"
     },
     "name": "getCalibratedRed",
@@ -110468,13 +110496,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@6323@F@getCalibratedRed@result",
+    "ID": "c:main.c@6392@F@getCalibratedRed@result",
     "What": "Variable",
     "defdec": "Def",
     "display": "result",
     "location": {
       "column": "11",
-      "line": "254",
+      "line": "262",
       "path": "C:\\Users\\testHome\\Documents\\ARMProgrammingNew\\downloadsSTM32100BEVAL\\STM32F10x_StdPeriph_Lib_V3.5.0\\Project\\AS7262Cloned\\main.c"
     },
     "name": "result",
@@ -110488,7 +110516,7 @@
     "display": "float getCalibratedValue(uint8_t)",
     "location": {
       "column": "7",
-      "line": "258",
+      "line": "266",
       "path": "C:\\Users\\testHome\\Documents\\ARMProgrammingNew\\downloadsSTM32100BEVAL\\STM32F10x_StdPeriph_Lib_V3.5.0\\Project\\AS7262Cloned\\main.c"
     },
     "name": "getCalibratedValue",
@@ -110496,13 +110524,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@6453@F@getCalibratedValue@calBytes",
+    "ID": "c:main.c@6522@F@getCalibratedValue@calBytes",
     "What": "Variable",
     "defdec": "Def",
     "display": "calBytes",
     "location": {
       "column": "14",
-      "line": "260",
+      "line": "268",
       "path": "C:\\Users\\testHome\\Documents\\ARMProgrammingNew\\downloadsSTM32100BEVAL\\STM32F10x_StdPeriph_Lib_V3.5.0\\Project\\AS7262Cloned\\main.c"
     },
     "name": "calBytes",
@@ -110516,7 +110544,7 @@
     "display": "uint8_t virtualReadReg(uint8_t)",
     "location": {
       "column": "9",
-      "line": "277",
+      "line": "285",
       "path": "C:\\Users\\testHome\\Documents\\ARMProgrammingNew\\downloadsSTM32100BEVAL\\STM32F10x_StdPeriph_Lib_V3.5.0\\Project\\AS7262Cloned\\main.c"
     },
     "name": "virtualReadReg",
@@ -110530,7 +110558,7 @@
     "display": "void virtualWriteReg(uint8_t, uint8_t)",
     "location": {
       "column": "8",
-      "line": "305",
+      "line": "313",
       "path": "C:\\Users\\testHome\\Documents\\ARMProgrammingNew\\downloadsSTM32100BEVAL\\STM32F10x_StdPeriph_Lib_V3.5.0\\Project\\AS7262Cloned\\main.c"
     },
     "name": "virtualWriteReg",
@@ -110544,7 +110572,7 @@
     "display": "uint8_t readRegisterOneByte(int8_t, int8_t)",
     "location": {
       "column": "11",
-      "line": "330",
+      "line": "338",
       "path": "C:\\Users\\testHome\\Documents\\ARMProgrammingNew\\downloadsSTM32100BEVAL\\STM32F10x_StdPeriph_Lib_V3.5.0\\Project\\AS7262Cloned\\main.c"
     },
     "name": "readRegisterOneByte",
@@ -110558,7 +110586,7 @@
     "display": "void writeRegister(uint8_t, uint8_t)",
     "location": {
       "column": "6",
-      "line": "384",
+      "line": "392",
       "path": "C:\\Users\\testHome\\Documents\\ARMProgrammingNew\\downloadsSTM32100BEVAL\\STM32F10x_StdPeriph_Lib_V3.5.0\\Project\\AS7262Cloned\\main.c"
     },
     "name": "writeRegister",
