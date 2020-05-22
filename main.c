@@ -23,11 +23,7 @@ int CHIP1=1;
 int CHIP2=2;
 float humidityValue;
 float temparatureValue;
-//int i=0;
-//float k=0;
-//float n=0;
-//int j=5;
-//int p=10;
+
 char str[];
 //AS7262 
 uint8_t readVal=0;
