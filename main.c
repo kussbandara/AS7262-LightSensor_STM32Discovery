@@ -25,7 +25,6 @@ float humidityValue;
 float temparatureValue;
 
 char str[];
-//AS7262 
 uint8_t readVal=0;
 uint8_t  Status=0;
 uint8_t b0,b1,b2,b3;
@@ -39,16 +38,13 @@ float myFloat;
 uint8_t RegVal = 0;
 volatile uint8_t result=0;
 /* Private function prototypes -----------------------------------------------*/
- //void delay(int nCount);
-//void Delay(__IO uint32_t nCount);
+ 
 void Timer_Configuration(void);
 void Delay_ms(int ms);
 void Enable_Clock(void);
 void Config_GPIO(void);
 void Init_I2C(void);
 void Test1(void);
-
-
 
 //AS7262 functions
 void Timer_Configuration();
@@ -132,11 +128,6 @@ int main(void)
   }
 }
 
-
-void Test1(){
-  
-  printf("testing");
-}
 
 
 void Init_I2C(void){
